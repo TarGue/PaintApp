@@ -27,12 +27,15 @@ require({
     var b=0
 
     $("body").append(
+      '<h1>PaintApp</h1>'+
       '<div id="content">'+
-      '<div id="menu" ><div id="generation" class="button">Start & Reset</div>'+
-      '<div id="randColor" class="button">Random Color</div>'+
-
-      '<div id="black" class="button">Black</div><div id="inputs"></div>'+
+      '<p>Please choose a size and press on the "Start & Reset" button</p>'+
       '<div id="sizemenu">Width:<input id="height" type="number" value="'+a+'"max="100"">Height:<input id="width" type="number" value="'+b+'" max="100"></div></div>'+
+        '<div id="menu" ><div id="generation" class="button">Start & Reset</div>'+
+        '<div id="randColor" class="button">Random Color</div>'+
+        '<div id="black" class="button">Black</div>'+
+       // '<div id="colorpicker"><input type="color" name="color" value="#ff0000"><div>'+
+     
         '<div id="container"></div>')
 
  function squares(size){
